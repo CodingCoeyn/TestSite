@@ -31,7 +31,7 @@ get_header();
     <p class="para" style="float:left;"><?php echo apply_filters( 'the_content', $content) ?></p> <!-- Printing the content -->
     <!--The above line trims all the unnecessary object attributes from $content-->
     
-    <div>
+    <div style='align-content'>
         <p><?php echo $user; ?></p>
     </div>
     <img src="<?php echo $img; ?>"/> <!--use image url-->

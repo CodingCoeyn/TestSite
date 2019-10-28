@@ -1,17 +1,30 @@
-/*
- Theme Name:   Twenty Nineteen Child
- Theme URI:    http://example.com/twenty-nineteen-child/
- Description:  Twenty Nineteen Child Theme
- Author:       mahassin
- Author URI:   http://example.com
- Template:     twentynineteen
- Version:      1.0.0
- License:      GNU General Public License v2 or later
- License URI:  http://www.gnu.org/licenses/gpl-2.0.html
- Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
- Text Domain:  twentynineteenchild
-*/
+nav li {
+  color: #01331a;
+}
+nav li:hover {
+  color: #3cc437;
+}
+
+div {
+  align-content: center;
+}
+div p {
+  color: red;
+}
+div p:hover {
+  color: blue;
+}
+
+img:active {
+  visibility: hidden;
+}
 
 .site {
-	background-color: #f8d5c1;
+  background-color: antiquewhite;
 }
+
+figcaption {
+  align-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

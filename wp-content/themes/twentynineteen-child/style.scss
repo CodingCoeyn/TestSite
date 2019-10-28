@@ -1,0 +1,35 @@
+nav {
+    li{
+        color: #01331a;
+        &:hover{
+            color: #3cc437;
+        }
+    }
+}
+
+div{
+    align-content: center;
+    p{
+        color: red;
+    
+        &:hover{
+    
+            color: blue;
+        }
+    }
+}
+
+
+img{
+    &:active{
+        visibility: hidden;
+    }
+}
+
+.site{
+    background-color: antiquewhite;
+}
+
+figcaption{
+    align-content: center;
+}
