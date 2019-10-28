@@ -28,6 +28,7 @@ get_header();
 						<p><?php the_field('stand_name');?></p>
 						<img src="<?php the_field('stand_image');?>"/>
 					</div>
+					
 				<?php
 				if ( is_singular( 'attachment' ) ) {
 					// Parent post navigation.
@@ -51,8 +52,6 @@ get_header();
 					);
 				}			
 				
-	
-
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) {
 					comments_template();
