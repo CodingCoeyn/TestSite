@@ -1,35 +1,18 @@
-nav {
-    li{
-        color: #01331a;
-        &:hover{
-            color: #3cc437;
+@import 'C:/xampp/htdocs/testsite/node_modules/foundation-sites/scss/foundation.scss';
+
+// @include foundation-grid;
+@include foundation-flex-classes;
+@include foundation-flex-grid;
+
+.site {
+    #navLinks{
+        list-style-type: none;
+        font-size: 60px;
+        a{
+            color: black;
+            &:hover{
+                color: orangered;
+            }
         }
     }
-}
-
-div{
-    align-content: center;
-    p{
-        color: red;
-    
-        &:hover{
-    
-            color: blue;
-        }
-    }
-}
-
-
-img{
-    &:active{
-        visibility: hidden;
-    }
-}
-
-.site{
-    background-color: antiquewhite;
-}
-
-figcaption{
-    align-content: center;
 }

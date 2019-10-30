@@ -1,14 +1,15 @@
 <?php
 
-/*Template Name: 1.0 Jojos Characters 
+/*Template Name: 1.1 Jojos Characters 
 
-Template Post Type: page*/
+Template Post Type: page
 
-/** this is the template for the page that hosts all the Jojos
+this is the template for the page that hosts all the Jojos
  * Character Posts
  */
 
 get_header();
+
 ?>
 
 <body>
@@ -20,13 +21,9 @@ $args = array(
 
 $the_query = new WP_Query($args);
 
-/*echo '<pre>';
-print_r($the_query);
-echo '</pre>';
-exit;*/
 ?>
 
-    <div class="row align-center">
+    <div class="row">
         <div class="columns medium-6">
             <?php if($the_query->have_posts() ):
                 while ( $the_query->have_posts() ):
@@ -34,12 +31,11 @@ exit;*/
                 
             ?>
 
-            <h1><?php
+            <h3><?php
 
             the_title();
 
-            ?></h1>
-
+            ?></h3>
 
             <a href="<?php the_permalink();?>">Read more..</a>
 

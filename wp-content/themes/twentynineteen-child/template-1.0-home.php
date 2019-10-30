@@ -1,5 +1,6 @@
 <?php
-/* Template Name: 1.0 Home */
+/* Template Name: 1.0 Home 
+*   Template Post Type: page*/
 
 get_header();
 ?>
@@ -28,9 +29,31 @@ get_header();
     
 ?>
 
+<?php 
 
+  $args = array(
+    'post_title' => 'AllJojos'
+  );
+
+  $the_query = new WP_Query($args);
+
+  if($the_query -> have_posts() ):
+    {
+      echo '<h1>Found the Image</h1>';
+    }
+  endif;
+
+  apply_filters('wp_get_attachment_image_src',$args,$the_query ->get_)
+
+  $jojoIMG
+
+?>
   
-    <p> home template words </p>
+  <div class="row">
+    <div class="column large-6 align-center">
+     <!-- <img  src="<?php $jojoIMG ?>" alt="All of the Jojos">-->
+    </div>
+  </div>
     
 
 
