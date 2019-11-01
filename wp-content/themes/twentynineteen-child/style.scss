@@ -4,15 +4,85 @@
 @include foundation-flex-classes;
 @include foundation-flex-grid;
 
-.site {
-    #navLinks{
-        list-style-type: none;
-        font-size: 60px;
-        a{
-            color: black;
-            &:hover{
-                color: orangered;
-            }
+/*****Header Styles*****/
+
+//for the navigation bar
+#navLinks{
+    list-style-type: none;
+    font-size: 60px;
+    a{
+        color: black;
+        &:hover{
+            color: orangered;
         }
     }
 }
+
+/*****Body*****/
+
+//gets ride of those little separater lines in the theme
+::before{
+    visibility: hidden;
+}
+
+//hides the out of place [HOME] title on the homepage only
+/*.entry-title{
+    display: none;
+}*/
+
+//makes site an off-white
+.site{
+    background-color: #fafafa;
+}
+/*****Footer Styles*****/
+
+//for the category box
+#cat{
+    background-color: white;
+    color: black;
+
+    &:hover{
+        background-color: orangered;
+        color: white;
+    }
+}
+
+form{
+    input[type="submit"]{
+        background-color: black;
+        &:hover{
+            background-color: orangered;
+        }
+    }
+}
+//for the audio box
+/* WP 3.6 Native Audio Player styling*/
+
+/* change the color of the background */
+.mejs-controls,
+.mejs-mediaelement,
+.mejs-container {
+	background: url('') !important;
+	background-color: orangered !important;
+}
+
+/* change the color of the lettering */
+.mejs-currenttime,
+.mejs-duration {
+	color: white !important;
+}
+
+/* eliminate the yellow border around the play button during playback */
+.mejs-controls .mejs-button button:focus {
+outline: none !important;
+}
+//for all the widgets
+.widget-area h2, .widget-area ul li{
+    a{
+        color: black;
+        &:hover{
+            color: orangered;
+        }
+    }
+}
+

@@ -22,7 +22,8 @@
 	<div id="navLinks" class="row">
 		<a class="columns" href="http://localhost/testsite">Home</a>
 		<a class="columns" href="http://localhost/testsite/about">About</a>
-		<a class="columns" href="http://localhost/testsite/jojo-characters/">Jojos Characters</a>		
+		<a class="columns" href="http://localhost/testsite/jojo-characters/">Jojos Characters</a>
+		
 	</div>
 
 

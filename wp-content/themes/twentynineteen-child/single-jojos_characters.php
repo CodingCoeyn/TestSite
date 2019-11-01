@@ -18,18 +18,27 @@ get_header();
 			<?php
 
 			/* Start the Loop */
+
 			while ( have_posts() ) :
+
+				echo '<h3>';
+				the_title();
+				
+				echo '</h3>';
+				?>
+					<div class="row align-center">
+						<div class="column">
+							<img src="<?php the_field('stand_user_image');?>"/>
+							<p><?php the_field('stand_name');?></p>
+							<img src="<?php the_field('stand_image');?>"/>
+						</div>
+					</div>
+				
+				<?php
 				the_post();
 
 				get_template_part( 'template-parts/content/content', 'single' );
-				?>
-					<div>
-						<img src="<?php the_field('stand_user_image');?>"/>
-						<p><?php the_field('stand_name');?></p>
-						<img src="<?php the_field('stand_image');?>"/>
-					</div>
-					
-				<?php
+				
 				if ( is_singular( 'attachment' ) ) {
 					// Parent post navigation.
 					the_post_navigation(

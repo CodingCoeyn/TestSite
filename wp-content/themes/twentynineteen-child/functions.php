@@ -13,7 +13,6 @@ function my_theme_enqueue_styles() {
 }
 
 
-
 require_once('assets/functions/cpt-jojos-characters.php');
 
 

@@ -24,20 +24,27 @@ $the_query = new WP_Query($args);
 ?>
 
     <div class="row">
-        <div class="columns medium-6">
+        <div class="columns large-6">
             <?php if($the_query->have_posts() ):
                 while ( $the_query->have_posts() ):
                     $the_query->the_post();
                 
             ?>
+            <div class="column">
+                <h3><?php
 
-            <h3><?php
+                the_title();
 
-            the_title();
+                ?></h3>
 
-            ?></h3>
+                <p><?php the_excerpt();?></p>
+                <a href="<?php the_permalink();?>">Read more..</a>
+            </div>
 
-            <a href="<?php the_permalink();?>">Read more..</a>
+            <?php add_theme_support( 'post-thumbnails' ); ?>
+            <div class="column">
+                    <img src="<?php echo get_the_post_thumbnail_url();?>"/>
+            </div>
 
             <?php
             endwhile;

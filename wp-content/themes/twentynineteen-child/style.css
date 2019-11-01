@@ -917,14 +917,72 @@
   }
 }
 
-.site #navLinks {
+/*****Header Styles*****/
+#navLinks {
   list-style-type: none;
   font-size: 60px;
 }
-.site #navLinks a {
+#navLinks a {
   color: black;
 }
-.site #navLinks a:hover {
+#navLinks a:hover {
+  color: orangered;
+}
+
+/*****Body*****/
+::before {
+  visibility: hidden;
+}
+
+/*.entry-title{
+    display: none;
+}*/
+.site {
+  background-color: #fafafa;
+}
+
+/*****Footer Styles*****/
+#cat {
+  background-color: white;
+  color: black;
+}
+#cat:hover {
+  background-color: orangered;
+  color: white;
+}
+
+form input[type=submit] {
+  background-color: black;
+}
+
+form input[type=submit]:hover {
+  background-color: orangered;
+}
+
+/* WP 3.6 Native Audio Player styling*/
+/* change the color of the background */
+.mejs-controls,
+.mejs-mediaelement,
+.mejs-container {
+  background: url("") !important;
+  background-color: orangered !important;
+}
+
+/* change the color of the lettering */
+.mejs-currenttime,
+.mejs-duration {
+  color: white !important;
+}
+
+/* eliminate the yellow border around the play button during playback */
+.mejs-controls .mejs-button button:focus {
+  outline: none !important;
+}
+
+.widget-area h2 a, .widget-area ul li a {
+  color: black;
+}
+.widget-area h2 a:hover, .widget-area ul li a:hover {
   color: orangered;
 }
 

@@ -27,7 +27,7 @@ exit;*/
 ?>
 
     <div class="row align-center">
-        <div class="columns medium-6">
+        <div class="columns large-6">
             <?php if($the_query->have_posts() ):
                 while ( $the_query->have_posts() ):
                     $the_query->the_post();
