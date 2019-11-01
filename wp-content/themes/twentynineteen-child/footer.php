@@ -15,38 +15,51 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<?php get_template_part( 'template-parts/footer/footer', 'widgets' ); ?>
-		<div class="site-info">
-			<?php $blog_info = get_bloginfo( 'name' ); ?>
-			<?php if ( ! empty( $blog_info ) ) : ?>
-				<a class="site-name" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>,
-			<?php endif; ?>
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentynineteen' ) ); ?>" class="imprint">
+
+	<footer id="colophon" class="site-footer row align-center">
+		<div class="column large-2">
+			<h5>Search</h5>
+
+			<form>
+				<input typr="text" name="searchBar" value="Search">
+				<br><br>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+		<div class="column large-2">
+			<h5>Songs</h5>
+
+			<ul>
+				<li>Song1</li>
+				<li>Song2</li>
+				<li>Song3</li>
+			</ul>
+		</div>
+		<div class="column large-2">
+			<h5>Recent Posts</h5>
+			<ul>
+				<?php $args = array('post_type' => 'jojos_characters');
+
+				$the_query = new WP_Query($args);
+					
+				while($the_query -> have_posts()): $the_query -> the_post(); ?>
+
+				<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 				<?php
-				/* translators: %s: WordPress. */
-				printf( __( 'Proudly powered by %s.', 'twentynineteen' ), 'WordPress' );
-				?>
-			</a>
-			<?php
-			if ( function_exists( 'the_privacy_policy_link' ) ) {
-				the_privacy_policy_link( '', '<span role="separator" aria-hidden="true"></span>' );
-			}
-			?>
-			<?php if ( has_nav_menu( 'footer' ) ) : ?>
-				<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'twentynineteen' ); ?>">
-					<?php
-					wp_nav_menu(
-						array(
-							'theme_location' => 'footer',
-							'menu_class'     => 'footer-menu',
-							'depth'          => 1,
-						)
-					);
+					endwhile;
+					wp_reset_postdata();
 					?>
-				</nav><!-- .footer-navigation -->
-			<?php endif; ?>
-		</div><!-- .site-info -->
+			</ul>
+		</div>
+		<div class="column large-2">
+			<h5>s'more stuffs</h5>
+			<ul>
+				<li>Social 1</li>
+				<li>Social 2</li>
+				<li>Social 3</li>
+			</ul>
+		</div>
+
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->

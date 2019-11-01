@@ -931,30 +931,34 @@
 
 /*****Body*****/
 ::before {
+  display: none;
   visibility: hidden;
 }
 
 /*.entry-title{
     display: none;
 }*/
+#navLinks a {
+  font-size: 50px;
+}
+
 .site {
   background-color: #fafafa;
 }
 
 /*****Footer Styles*****/
-#cat {
-  background-color: white;
-  color: black;
-}
-#cat:hover {
-  background-color: orangered;
-  color: white;
-}
+/*#cat{
+    background-color: white;
+    color: black;
 
+    &:hover{
+        background-color: orangered;
+        color: white;
+    }
+}*/
 form input[type=submit] {
   background-color: black;
 }
-
 form input[type=submit]:hover {
   background-color: orangered;
 }

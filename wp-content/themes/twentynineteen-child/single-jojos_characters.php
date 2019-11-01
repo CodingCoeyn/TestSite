@@ -11,9 +11,9 @@
 
 get_header();
 ?>
-
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
+	<div class="row">
+		<div class ="column"></div>
+		<div id="singleJo" class ="column large-10 align-center">
 
 			<?php
 
@@ -21,18 +21,12 @@ get_header();
 
 			while ( have_posts() ) :
 
-				echo '<h3>';
-				the_title();
-				
-				echo '</h3>';
 				?>
-					<div class="row align-center">
-						<div class="column">
-							<img src="<?php the_field('stand_user_image');?>"/>
-							<p><?php the_field('stand_name');?></p>
-							<img src="<?php the_field('stand_image');?>"/>
-						</div>
-					</div>
+					<h3><?php the_title(); ?></h3>
+					<img src="<?php the_field('stand_user_image');?>"/>
+					<p><?php the_field('stand_name');?></p>
+					<img src="<?php the_field('stand_image');?>"/>
+
 				
 				<?php
 				the_post();
@@ -68,10 +62,12 @@ get_header();
 
 			endwhile; // End of the loop.
 			?>
+			
 
 			<!-- this is visible underneath the comment box-->
-		</main><!-- #main -->
-	</section><!-- #primary -->
+		</div><!-- .columns -->
+		<div class ="column"></div>
+	</div><!-- .row -->
 
 <?php
 get_footer();

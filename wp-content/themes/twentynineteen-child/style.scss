@@ -22,6 +22,7 @@
 
 //gets ride of those little separater lines in the theme
 ::before{
+    display: none;
     visibility: hidden;
 }
 
@@ -30,14 +31,23 @@
     display: none;
 }*/
 
+//header links
+#navLinks a{
+    font-size: 50px;
+}
+
+#singleJo{
+    //text-align: center;
+}
+
 //makes site an off-white
 .site{
     background-color: #fafafa;
 }
 /*****Footer Styles*****/
 
-//for the category box
-#cat{
+//for the category box (took all the widgets out)
+/*#cat{
     background-color: white;
     color: black;
 
@@ -45,7 +55,7 @@
         background-color: orangered;
         color: white;
     }
-}
+}*/
 
 form{
     input[type="submit"]{
