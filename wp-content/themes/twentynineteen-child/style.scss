@@ -4,21 +4,24 @@
 @include foundation-flex-classes;
 @include foundation-flex-grid;
 
-/*****Header Styles*****/
+/***************************Header Styles***********************************/
 
 //for the navigation bar
 #navLinks{
     list-style-type: none;
-    font-size: 60px;
+    font-size: 50px;
+    text-align: center;
     a{
         color: black;
+
         &:hover{
             color: orangered;
         }
     }
 }
+ 
 
-/*****Body*****/
+/*******************************************Body*****************************/
 
 //gets ride of those little separater lines in the theme
 ::before{
@@ -31,10 +34,21 @@
     display: none;
 }*/
 
-//header links
-#navLinks a{
-    font-size: 50px;
+form{ // for ALL search buttons
+    input[type="submit"]{
+        background-color: black !important;
+        &:hover{
+            background-color: orangered !important;
+        }
+    }
 }
+
+#hmuPage{ //for contact page
+    .entry-title{
+        display: none;
+    }
+}
+
 
 #singleJo{
     //text-align: center;
@@ -43,11 +57,19 @@
 //makes site an off-white
 .site{
     background-color: #fafafa;
+    a{
+        color: black !important;
+        &:hover{
+            color: orangered !important;
+        }
+    }
 }
-/*****Footer Styles*****/
 
-//for the category box (took all the widgets out)
-/*#cat{
+
+
+/****************************Footer Styles************************************/
+
+/*#cat{ //for the category box (took all the widgets out)
     background-color: white;
     color: black;
 
@@ -57,14 +79,23 @@
     }
 }*/
 
-form{
-    input[type="submit"]{
-        background-color: black;
-        &:hover{
-            background-color: orangered;
+
+.site-footer{
+
+    text-align: center;
+    .ftrSearch{
+        input[type="text"]
+        {
+            width: 50%;
         }
     }
+
+    ul li{
+        list-style-type: none;
+    }
+
 }
+
 //for the audio box
 /* WP 3.6 Native Audio Player styling*/
 
@@ -86,13 +117,3 @@ form{
 .mejs-controls .mejs-button button:focus {
 outline: none !important;
 }
-//for all the widgets
-.widget-area h2, .widget-area ul li{
-    a{
-        color: black;
-        &:hover{
-            color: orangered;
-        }
-    }
-}
-

@@ -17,11 +17,11 @@
 
 
 	<footer id="colophon" class="site-footer row align-center">
-		<div class="column large-2">
+		<div id='ftrSearch' class="column large-2">
 			<h5>Search</h5>
 
 			<form>
-				<input typr="text" name="searchBar" value="Search">
+				<input type="text" name="searchBar" value="Search">
 				<br><br>
 				<input type="submit" value="Submit">
 			</form>
@@ -41,11 +41,15 @@
 				<?php $args = array('post_type' => 'jojos_characters');
 
 				$the_query = new WP_Query($args);
+				$count = 1;
 					
-				while($the_query -> have_posts()): $the_query -> the_post(); ?>
+				while(($the_query -> have_posts()) & ($count<=3) ): $the_query -> the_post(); 
+				
+				?>
 
 				<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 				<?php
+					$count++;
 					endwhile;
 					wp_reset_postdata();
 					?>

@@ -917,10 +917,11 @@
   }
 }
 
-/*****Header Styles*****/
+/***************************Header Styles***********************************/
 #navLinks {
   list-style-type: none;
-  font-size: 60px;
+  font-size: 50px;
+  text-align: center;
 }
 #navLinks a {
   color: black;
@@ -929,7 +930,7 @@
   color: orangered;
 }
 
-/*****Body*****/
+/*******************************************Body*****************************/
 ::before {
   display: none;
   visibility: hidden;
@@ -938,16 +939,29 @@
 /*.entry-title{
     display: none;
 }*/
-#navLinks a {
-  font-size: 50px;
+form input[type=submit] {
+  background-color: black !important;
+}
+form input[type=submit]:hover {
+  background-color: orangered !important;
+}
+
+#hmuPage .entry-title {
+  display: none;
 }
 
 .site {
   background-color: #fafafa;
 }
+.site a {
+  color: black !important;
+}
+.site a:hover {
+  color: orangered !important;
+}
 
-/*****Footer Styles*****/
-/*#cat{
+/****************************Footer Styles************************************/
+/*#cat{ //for the category box (took all the widgets out)
     background-color: white;
     color: black;
 
@@ -956,11 +970,14 @@
         color: white;
     }
 }*/
-form input[type=submit] {
-  background-color: black;
+.site-footer {
+  text-align: center;
 }
-form input[type=submit]:hover {
-  background-color: orangered;
+.site-footer .ftrSearch input[type=text] {
+  width: 50%;
+}
+.site-footer ul li {
+  list-style-type: none;
 }
 
 /* WP 3.6 Native Audio Player styling*/
@@ -981,13 +998,6 @@ form input[type=submit]:hover {
 /* eliminate the yellow border around the play button during playback */
 .mejs-controls .mejs-button button:focus {
   outline: none !important;
-}
-
-.widget-area h2 a, .widget-area ul li a {
-  color: black;
-}
-.widget-area h2 a:hover, .widget-area ul li a:hover {
-  color: orangered;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -12,7 +12,7 @@ get_header();
 
 ?>
 
-<body>
+<body class="site-content">
 
 <?php
 $args = array(
