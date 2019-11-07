@@ -17,25 +17,28 @@
 
 
 	<footer id="colophon" class="site-footer row align-center">
-		<div id='ftrSearch' class="column large-2">
+		<div id='ftrSearch' class="column large-3">
 			<h5>Search</h5>
 
 			<form>
-				<input type="text" name="searchBar" value="Search">
+				<input type="text" name="searchBar" placeholder="Search">
 				<br><br>
 				<input type="submit" value="Submit">
 			</form>
 		</div>
-		<div class="column large-2">
-			<h5>Songs</h5>
+		<div class="column large-3">
+			<h5>Roundabout</h5>
+			<?php $dir = get_stylesheet_directory_uri(); 
+					echo $dir; ?>
 
-			<ul>
-				<li>Song1</li>
-				<li>Song2</li>
-				<li>Song3</li>
-			</ul>
+			<audio controls>
+				<source src="<?php $song?>" type="audio/mpeg">
+			</audio>
+			
+				
+
 		</div>
-		<div class="column large-2">
+		<div class="column large-3">
 			<h5>Recent Posts</h5>
 			<ul>
 				<?php $args = array('post_type' => 'jojos_characters');
@@ -53,13 +56,14 @@
 					endwhile;
 					wp_reset_postdata();
 					?>
+					
 			</ul>
 		</div>
-		<div class="column large-2">
-			<h5>s'more stuffs</h5>
+		<div class="column large-3">
+			<h5>Contact Us</h5>
 			<ul>
-				<li>Social 1</li>
-				<li>Social 2</li>
+				<li><a href="http://localhost/testsite/contact">HMU</a></li>
+				<li><a href="http://localhost/testsite/privacy-policy/">Privacy</a></li>
 				<li>Social 3</li>
 			</ul>
 		</div>
@@ -69,6 +73,7 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+
 
 </body>
 </html>

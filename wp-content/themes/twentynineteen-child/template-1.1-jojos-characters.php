@@ -12,7 +12,7 @@ get_header();
 
 ?>
 
-<body class="site-content">
+<body class="site-content" <?php body_class(); ?>>
 
 <?php
 $args = array(
@@ -24,28 +24,27 @@ $the_query = new WP_Query($args);
 ?>
 
     <div class="row">
-        <div class="columns large-6">
+
             <?php if($the_query->have_posts() ):
                 while ( $the_query->have_posts() ):
                     $the_query->the_post();
                 
             ?>
-            <div class="column">
-                <h3><?php
+        <div class="column large-6 small-12">
+            <h3>
+                <?php
 
                 the_title();
 
-                ?></h3>
+                ?>
+            </h3>
 
-                <p><?php the_excerpt();?></p>
-                <a href="<?php the_permalink();?>">Read more..</a>
-            </div>
+            <p><?php the_excerpt();?></p>
+            <a href="<?php the_permalink();?>">Read more..</a>
 
             <?php add_theme_support( 'post-thumbnails' ); ?>
-            <div class="column">
-                    <img src="<?php echo get_the_post_thumbnail_url();?>"/>
-            </div>
-
+            <img src="<?php echo get_the_post_thumbnail_url();?>"/>
+        </div>
             <?php
             endwhile;
             else:
@@ -54,7 +53,6 @@ $the_query = new WP_Query($args);
                 }
             endif;
             ?>
-        </div>
     </div>
 
 </body>
