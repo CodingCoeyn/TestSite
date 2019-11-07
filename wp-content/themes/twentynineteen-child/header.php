@@ -21,6 +21,6 @@
 		<a class="columns" href="http://localhost/testsite/jojo-characters/">Jojos Characters</a>
 		<a class="columns" href="http://localhost/testsite/contact">HMU</a>
 	</div>
-
+	<br>
 
 	<div id="content" class="site-content">

@@ -23,15 +23,15 @@ $the_query = new WP_Query($args);
 
 ?>
 
-    <div class="row">
+    <div class="row align-center">
 
             <?php if($the_query->have_posts() ):
                 while ( $the_query->have_posts() ):
                     $the_query->the_post();
                 
             ?>
-        <div class="column large-6 small-12">
-            <h3>
+        <div class="column large-5 small-12 align-left ">
+            <h3 class="ph3">
                 <?php
 
                 the_title();
@@ -39,11 +39,12 @@ $the_query = new WP_Query($args);
                 ?>
             </h3>
 
+            <?php add_theme_support( 'post-thumbnails' ); ?>
+            <img class="ph3" src="<?php echo get_the_post_thumbnail_url();?>"/>
+
             <p><?php the_excerpt();?></p>
             <a href="<?php the_permalink();?>">Read more..</a>
 
-            <?php add_theme_support( 'post-thumbnails' ); ?>
-            <img src="<?php echo get_the_post_thumbnail_url();?>"/>
         </div>
             <?php
             endwhile;

@@ -16,22 +16,23 @@ get_header();
 	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="\testsite\wp-content\themes\twentynineteen-child\assets\styles\slick-1.8.1\slick\slick.min.js"></script>
 
-
+	<br>
+	<br>
 
   <div class="row align-center">
 
-    <div class="column large-12 align-center b">
+    <div id="homeContent" class="column large-8 align-center b">
 
         <div id="slideyboi" class="jojoSlider">
             <div><img src="/testsite/wp-content/uploads/2019/10/AllJojos-1.jpg" alt="All Jojos"></div>
             <div><img src="/testsite/wp-content/uploads/2019/11/jojos1234.jpeg" alt="Jojos 1, 2, 3 & 4"></div>
-            <div><img src="/testsite/wp-content/uploads/2019/11/joelene-kujo.jpg" alt="Joelene Kujo"></div>
+            <div><img src="/testsite/wp-content/uploads/2019/11/joelene-kujo.jpg" alt="Jolyne Cujoh"></div>
             <div><img src="/testsite/wp-content/uploads/2019/11/giorno-giovanna.jpg" alt = "Golden Wind & Giorno Giovanna"></div>
         </div>
 
         <div id="hometext">
             <p class="b"> This is the homepage for my Jojo’s Bizarre Adventure Practice Website.
-        All of the characters on this site are from Jojo’s 1-5. </p>
+        		All of the characters on this site are from Jojo’s 1-5. </p>
         </div>
     </div>
 
@@ -46,12 +47,13 @@ get_header();
 				dots: true,
 				infinite: true,
 				autoplay: true,
-				autoplaySpeed: 3000,
+				autoplaySpeed: 2500,
 			});
 		});
 	</script>
 
 </body>
+
 
 
 <?php get_footer(); ?>

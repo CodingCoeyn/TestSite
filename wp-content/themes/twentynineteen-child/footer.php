@@ -14,28 +14,26 @@
 ?>
 
 	</div><!-- #content -->
-
-
+	<br>
+	<br>
 	<footer id="colophon" class="site-footer row align-center">
-		<div id='ftrSearch' class="column large-3">
+		<div id='ftrSearch' class="column large-2">
 			<h5>Search</h5>
 
 			<form>
-				<input type="text" name="searchBar" placeholder="Search">
+				<input class="w3" type="text" name="searchBar" placeholder="Search">
 				<br><br>
 				<input type="submit" value="Submit">
 			</form>
 		</div>
 		<div class="column large-3">
 			<h5>Roundabout</h5>
-			<?php $dir = get_stylesheet_directory_uri(); 
-					echo $dir; ?>
 
-			<audio controls>
-				<source src="<?php $song?>" type="audio/mpeg">
+			<audio class ="pr4"controls>
+				<source src="/testsite/wp-content/uploads/2019/10/00-Yes-Roundabout-2008-Remastered-Version.mp3" type="audio/mpeg">
 			</audio>
 			
-				
+
 
 		</div>
 		<div class="column large-3">
@@ -59,12 +57,12 @@
 					
 			</ul>
 		</div>
-		<div class="column large-3">
+		<div class="column large-2">
 			<h5>Contact Us</h5>
 			<ul>
 				<li><a href="http://localhost/testsite/contact">HMU</a></li>
 				<li><a href="http://localhost/testsite/privacy-policy/">Privacy</a></li>
-				<li>Social 3</li>
+				<li><a href="http://localhost/testsite/archives/">Archives</a></li>
 			</ul>
 		</div>
 

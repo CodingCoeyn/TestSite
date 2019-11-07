@@ -1,0 +1,5 @@
+cd wp-content\themes\twentynineteen-child
+sass --watch style.scss style.css
+
+cd wp-content\themes\twentynineteen-child\assets\styles\slick-1.8.1\slick\
+sass --watch slick-theme.scss slick-theme.cs

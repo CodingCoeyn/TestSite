@@ -37,3 +37,26 @@ figcaption{
 .widget-title{
     font-size: 1 em;
 }
+
+
+//for the audio box
+/*WP 3.6 Native Audio Player styling*/
+
+/* change the color of the background */
+.mejs-controls,
+.mejs-mediaelement,
+.mejs-container {
+	background: url('') !important;
+	background-color: orangered !important;
+}
+
+/* change the color of the lettering */
+.mejs-currenttime,
+.mejs-duration {
+	color: white !important;
+}
+
+/* eliminate the yellow border around the play button during playback */
+.mejs-controls .mejs-button button:focus {
+outline: none !important;
+}

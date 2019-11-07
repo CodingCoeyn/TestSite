@@ -50,10 +50,10 @@ form{ // for ALL search buttons
     }
 }
 
-
-#singleJo{
-    //text-align: center;
+#homeContent{
+    text-align: center;
 }
+
 
 //makes site an off-white
 .site{
@@ -65,7 +65,27 @@ form{ // for ALL search buttons
         }
     }
 }
+.site-content{
+    overflow: auto;
+}
 
+.slick-next::after {
+    content: ">" !important;
+  }
+  .slick-prev::after {
+    content: "<" !important;
+  }
+
+.slick-next,
+.slick-prev{
+    opacity: 100%;
+    font-size: 15px;
+    color: black;
+    &:hover, &:focus{
+        color: orangered;
+    }
+    
+}
 
 
 /****************************Footer Styles************************************/
@@ -85,37 +105,19 @@ form{ // for ALL search buttons
 .site-footer{
 
     text-align: center;
+    audio{
+        width: 14rem;
+    }
     .ftrSearch{
-        input[type="text"]
+        input[type="submit"]
         {
-            width: 50%;
+            width: 30px;
         }
     }
 
     ul li{
         list-style-type: none;
     }
-
+    font-size: 20px;
 }
 
-//for the audio box
-/* WP 3.6 Native Audio Player styling*/
-
-/* change the color of the background */
-.mejs-controls,
-.mejs-mediaelement,
-.mejs-container {
-	background: url('') !important;
-	background-color: orangered !important;
-}
-
-/* change the color of the lettering */
-.mejs-currenttime,
-.mejs-duration {
-	color: white !important;
-}
-
-/* eliminate the yellow border around the play button during playback */
-.mejs-controls .mejs-button button:focus {
-outline: none !important;
-}

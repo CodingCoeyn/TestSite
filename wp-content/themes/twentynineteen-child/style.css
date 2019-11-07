@@ -950,6 +950,10 @@ form input[type=submit]:hover {
   display: none;
 }
 
+#homeContent {
+  text-align: center;
+}
+
 .site {
   background-color: #fafafa;
 }
@@ -958,6 +962,30 @@ form input[type=submit]:hover {
 }
 .site a:hover {
   color: orangered !important;
+}
+
+.site-content {
+  overflow: auto;
+}
+
+.slick-next::after {
+  content: ">" !important;
+}
+
+.slick-prev::after {
+  content: "<" !important;
+}
+
+.slick-next,
+.slick-prev {
+  opacity: 100%;
+  font-size: 15px;
+  color: black;
+}
+.slick-next:hover, .slick-next:focus,
+.slick-prev:hover,
+.slick-prev:focus {
+  color: orangered;
 }
 
 /****************************Footer Styles************************************/
@@ -972,32 +1000,16 @@ form input[type=submit]:hover {
 }*/
 .site-footer {
   text-align: center;
+  font-size: 20px;
 }
-.site-footer .ftrSearch input[type=text] {
-  width: 50%;
+.site-footer audio {
+  width: 14rem;
+}
+.site-footer .ftrSearch input[type=submit] {
+  width: 30px;
 }
 .site-footer ul li {
   list-style-type: none;
-}
-
-/* WP 3.6 Native Audio Player styling*/
-/* change the color of the background */
-.mejs-controls,
-.mejs-mediaelement,
-.mejs-container {
-  background: url("") !important;
-  background-color: orangered !important;
-}
-
-/* change the color of the lettering */
-.mejs-currenttime,
-.mejs-duration {
-  color: white !important;
-}
-
-/* eliminate the yellow border around the play button during playback */
-.mejs-controls .mejs-button button:focus {
-  outline: none !important;
 }
 
 /*# sourceMappingURL=style.css.map */
