@@ -1,0 +1,30 @@
+{
+  "name": "testsite",
+  "version": "1.0.0",
+  "description": "This is my first wordpress site",
+  "main": "index.js",
+  "dependencies": {
+    "foundation-sites": "^6.5.3"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-minify": "^3.1.0"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodingCoeyn/TestSite.git"
+  },
+  "keywords": [
+    "test",
+    "yeet"
+  ],
+  "author": "Mahassin Thee Stallion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodingCoeyn/TestSite/issues"
+  },
+  "homepage": "https://github.com/CodingCoeyn/TestSite#readme"
+}

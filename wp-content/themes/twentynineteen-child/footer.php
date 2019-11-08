@@ -17,22 +17,30 @@
 	<br>
 	<br>
 	<footer id="colophon" class="site-footer row align-center">
+		
 		<div id='ftrSearch' class="column large-2">
 			<h5>Search</h5>
 
-			<form>
+			<div class="w3 align-center"> 
+			<?php get_search_form(); ?>
+			</div>
+
+			
+			<!--<form>
 				<input class="w3" type="text" name="searchBar" placeholder="Search">
 				<br><br>
 				<input type="submit" value="Submit">
-			</form>
+			</form>-->
+
 		</div>
 		<div class="column large-3">
 			<h5>Roundabout</h5>
 
+			<!--<?php the_widget('WP_Widget_Media_Audio'); ?>-->
+
 			<audio class ="pr4"controls>
 				<source src="/testsite/wp-content/uploads/2019/10/00-Yes-Roundabout-2008-Remastered-Version.mp3" type="audio/mpeg">
 			</audio>
-			
 
 
 		</div>

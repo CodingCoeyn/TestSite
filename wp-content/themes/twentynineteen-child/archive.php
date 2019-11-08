@@ -14,33 +14,43 @@ get_header();
 
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
+			<div class="row align-center">
+				<?php if ( have_posts() ) : ?>
 
-		<?php if ( have_posts() ) : ?>
+					<?php
 
-			<?php
-			// Start the Loop.
-			while ( have_posts() ) :
-				the_post();
+					$args = array('post_type' => 'jojos_characters');
 
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content/content', 'excerpt' );
+					$the_query = new WP_Query($args);
+					// Start the Loop.
+					while ( $the_query->have_posts() ):
+						$the_query->the_post();
 
-				// End the loop.
-			endwhile;
+						/*
+						* Include the Post-Format-specific template for the content.
+						* If you want to override this in a child theme, then include a file
+						* called content-___.php (where ___ is the Post Format name) and that will be used instead.
+						*/
+						?>
+						<div class="column large-12 ph3">
+							<h3><a href="<?php the_permalink();?>">
+								<?php the_title();?> </a>
+							</h3>
+						</div>
+						<?php
+						// End the loop.
+					endwhile;
 
-			// Previous/next page navigation.
-			twentynineteen_the_posts_navigation();
+					// Previous/next page navigation.
+					twentynineteen_the_posts_navigation();
 
-			// If no content, include the "No posts found" template.
-		else :
-			get_template_part( 'template-parts/content/content', 'none' );
+					// If no content, include the "No posts found" template.
+				else :
+					get_template_part( 'template-parts/content/content', 'none' );
 
-		endif;
-		?>
+				endif;
+				?>
+			</div>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 

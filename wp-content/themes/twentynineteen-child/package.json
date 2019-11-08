@@ -1,0 +1,19 @@
+{
+  "name": "twentynineteen-child",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp",
+    "watch": "gulp watch",
+    "styles": "gulp styles",
+    "browersync": "gulp browsersync"
+  },
+  "author": "Mahassin Thee Stallion",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-minify": "^3.1.0"
+  }
+}

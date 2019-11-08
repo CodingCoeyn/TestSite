@@ -26,7 +26,7 @@ get_header();
         <div id="slideyboi" class="jojoSlider">
             <div><img src="/testsite/wp-content/uploads/2019/10/AllJojos-1.jpg" alt="All Jojos"></div>
             <div><img src="/testsite/wp-content/uploads/2019/11/jojos1234.jpeg" alt="Jojos 1, 2, 3 & 4"></div>
-            <div><img src="/testsite/wp-content/uploads/2019/11/joelene-kujo.jpg" alt="Jolyne Cujoh"></div>
+            <div class="pa5"><img src="/testsite/wp-content/uploads/2019/11/joelene-kujo.jpg" alt="Jolyne Cujoh"></div>
             <div><img src="/testsite/wp-content/uploads/2019/11/giorno-giovanna.jpg" alt = "Golden Wind & Giorno Giovanna"></div>
         </div>
 
