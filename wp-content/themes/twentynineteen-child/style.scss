@@ -104,9 +104,14 @@ form{ // for ALL search buttons
 
 .site-footer{
 
-    text-align: center;
+    text-align: center !important;
+    .search-field{
+        align-content: center;
+        width: 6rem;
+        margin-bottom: 2rem;
+    }
     audio{
-        width: 14rem;
+        width: 12rem;
     }
     .ftrSearch{
         input[type="submit"]

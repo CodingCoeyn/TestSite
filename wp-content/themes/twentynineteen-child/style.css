@@ -999,11 +999,16 @@ form input[type=submit]:hover {
     }
 }*/
 .site-footer {
-  text-align: center;
+  text-align: center !important;
   font-size: 20px;
 }
+.site-footer .search-field {
+  align-content: center;
+  width: 6rem;
+  margin-bottom: 2rem;
+}
 .site-footer audio {
-  width: 14rem;
+  width: 12rem;
 }
 .site-footer .ftrSearch input[type=submit] {
   width: 30px;

@@ -13,6 +13,7 @@
 
 ?>
 
+
 	</div><!-- #content -->
 	<br>
 	<br>
@@ -21,7 +22,7 @@
 		<div id='ftrSearch' class="column large-2">
 			<h5>Search</h5>
 
-			<div class="w3 align-center"> 
+			<div class="align-center"> 
 			<?php get_search_form(); ?>
 			</div>
 
@@ -33,12 +34,12 @@
 			</form>-->
 
 		</div>
-		<div class="column large-3">
+		<div class="column large-3 medium-2">
 			<h5>Roundabout</h5>
 
 			<!--<?php the_widget('WP_Widget_Media_Audio'); ?>-->
 
-			<audio class ="pr4"controls>
+			<audio class ="pr4" controls>
 				<source src="/testsite/wp-content/uploads/2019/10/00-Yes-Roundabout-2008-Remastered-Version.mp3" type="audio/mpeg">
 			</audio>
 
