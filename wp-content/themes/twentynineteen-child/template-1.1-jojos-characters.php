@@ -39,8 +39,11 @@ $the_query = new WP_Query($args);
                 ?>
             </h3>
 
-            <?php add_theme_support( 'post-thumbnails' ); ?>
-            <img class="ph3" src="<?php echo get_the_post_thumbnail_url();?>"/>
+            <?php add_theme_support( 'post-thumbnails' ); 
+                $postID = get_post_thumbnail_id(get_the_ID());
+                $alt= get_post_meta( $postID, '_wp_attachment_image_alt', true); ?>
+                
+            <img class="ph3" src="<?php echo get_the_post_thumbnail_url();?>"  alt="<?php echo $alt;?>" />
 
             <p><?php the_excerpt();?></p>
             <a href="<?php the_permalink();?>">Read more..</a>
