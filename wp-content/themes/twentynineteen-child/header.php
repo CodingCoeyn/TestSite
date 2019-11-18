@@ -11,16 +11,19 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<?php wp_head(); ?>
+	<title><?php the_title_attribute(); ?></title>
 </head>
 
 <body>
 <div id="page" class="site">
-
 	<div id="navLinks" class="row align-center">
-		<a class="columns" href="http://localhost/testsite">Home</a>
-		<a class="columns" href="http://localhost/testsite/jojo-characters/">Jojos Characters</a>
-		<a class="columns" href="http://localhost/testsite/contact">HMU</a>
+		<nav>
+			<a class="columns" href="http://localhost/testsite">Home</a>
+			<a class="columns" href="http://localhost/testsite/jojo-characters/">Jojos Characters</a>
+			<a class="columns" href="http://localhost/testsite/contact">HMU</a>
+		<nav>
 	</div>
 	<br>
 
 	<div id="content" class="site-content">
+		
