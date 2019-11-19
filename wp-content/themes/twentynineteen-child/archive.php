@@ -32,7 +32,7 @@ get_header();
 						* called content-___.php (where ___ is the Post Format name) and that will be used instead.
 						*/
 						?>
-						<div class="column large-12 ph3">
+						<div class="column large-9 small-12">
 							<h3><a href="<?php the_permalink();?>">
 								<?php the_title();?> </a>
 							</h3>

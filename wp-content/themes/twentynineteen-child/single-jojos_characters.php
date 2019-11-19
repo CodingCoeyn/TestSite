@@ -23,9 +23,9 @@ get_header();
 
 				?>
 					<h3><?php the_title(); ?></h3>
-					<img src="<?php the_field('stand_user_image');?>"/>
+					<img src="<?php the_field('stand_user_image');?>" alt="<?php the_title(); ?>"/>
 					<p><?php the_field('stand_name');?></p>
-					<img src="<?php the_field('stand_image');?>"/>
+					<img src="<?php the_field('stand_image');?>" alt="<?php the_field('stand_name');?>"/>
 
 				
 				<?php

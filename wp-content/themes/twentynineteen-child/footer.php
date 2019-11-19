@@ -15,24 +15,7 @@
 
 
 	</div><!-- #content -->
-	<br>
-	<br>
 
-	<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-
-<aside class="widget-area" role="complementary" aria-label="<?php esc_attr_e( 'Footer', 'twentynineteen' ); ?>">
-	<?php
-	if ( is_active_sidebar( 'sidebar-1' ) ) {
-		?>
-				<div class="widget-column footer-widget-1">
-				<?php dynamic_sidebar( 'sidebar-1' ); ?>
-				</div>
-			<?php
-	}
-	?>
-</aside><!-- .widget-area -->
-
-<?php endif; ?>
 
 
 	<footer id="colophon" class="site-footer row align-center">
@@ -57,7 +40,7 @@
 
 			<!--<?php the_widget('WP_Widget_Media_Audio'); ?>-->
 
-			<audio class ="pr4" controls>
+			<audio class ="aligh-center" controls>
 				<source src="/testsite/wp-content/uploads/2019/10/00-Yes-Roundabout-2008-Remastered-Version.mp3" type="audio/mpeg">
 			</audio>
 

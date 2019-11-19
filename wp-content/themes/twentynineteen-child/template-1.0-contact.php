@@ -12,27 +12,10 @@ this is the template for the contact page
 
 <body id="hmuPage" <?php body_class(); ?>>
 
-
-    <div class="row">
-        <div class="column">
+    <div class="row align-center">
+        <div class="column large-8 small-12">
 		
-            <?php
-            if ( have_posts() ) {
-
-                // Load posts loop.
-                while ( have_posts() ) {
-                    the_post();
-                    get_template_part( 'template-parts/content/content' );
-                }
-                
-
-            } else {
-
-                // If no content, include the "No posts found" template.
-                get_template_part( 'template-parts/content/content', 'none' );
-
-            }
-            ?>
+            <?php echo do_shortcode("[gravityform id=1 title=true description=true]"); ?>
 
         </div>
     </div>

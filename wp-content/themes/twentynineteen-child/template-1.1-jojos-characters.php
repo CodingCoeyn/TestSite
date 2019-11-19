@@ -23,7 +23,7 @@ $the_query = new WP_Query($args);
 
 ?>
 
-    <div class="row align-center">
+    <div class="row align-left pl6">
 
             <?php if($the_query->have_posts() ):
                 while ( $the_query->have_posts() ):

@@ -16,14 +16,12 @@
 
 <body>
 <div id="page" class="site">
-	<div id="navLinks" class="row align-center">
-		<nav>
-			<a class="columns" href="http://localhost/testsite">Home</a>
-			<a class="columns" href="http://localhost/testsite/jojo-characters/">Jojos Characters</a>
-			<a class="columns" href="http://localhost/testsite/contact">HMU</a>
-		<nav>
-	</div>
-	<br>
+	<nav id="navLinks" class="row align-center">
+			<a class="column large-4" href="http://localhost/testsite">Home</a>
+			<a class="column large-4" href="http://localhost/testsite/jojo-characters/">Jojos Characters</a>
+			<a class="column large-4" href="http://localhost/testsite/contact">HMU</a>
+	</nav>
+	
 
-	<div id="content" class="site-content">
+	<div id="content" class="site-content pv4">
 		
