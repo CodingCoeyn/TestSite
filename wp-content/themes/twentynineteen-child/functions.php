@@ -16,9 +16,25 @@ function my_theme_enqueue_styles() {
     wp_enqueue_style( 'slick', get_stylesheet_directory_uri() . "/assets/styles/slick-1.8.1/slick/slick.css");
     wp_enqueue_style( 'slick-theme', get_stylesheet_directory_uri() . "/assets/styles/slick-1.8.1/slick/slick-theme.css");
 }
+add_action('wp_enqueue_scripts','my_theme_js');
 
+
+function my_theme_js() {
+    wp_enqueue_script( 'wp-wcag', get_stylesheet_directory_uri() . '/assets/scripts/wp-wcag.js', array('jquery'), '1.0.0', true );
+}
+
+
+add_filter('show_admin_bar', '__return_false');
 
 require_once('assets/functions/cpt-jojos-characters.php');
+
+//supposed to add a new Avatar but doesnt
+add_filter( 'avatar_defaults', 'wpb_new_gravatar' );
+function wpb_new_gravatar ($avatar_defaults) {
+$myavatar = 'testsite/wp-content/uploads/2019/11/TemachiPortraitFlat-scaled.png';
+$avatar_defaults[$myavatar] = "Default Gravatar";
+return $avatar_defaults;
+}
 
 
 

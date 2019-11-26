@@ -43,10 +43,18 @@ function custom_post_jojos_characters() {
 			'capability_type' => 'post',
 			'hierarchical' => false,
 			/* the next one is important, it tells what's enabled in the post editor */
-			'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'trackbacks', 'custom-fields', 'comments', 'revisions', 'sticky', 'post-formats')
+			'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'trackbacks', 'custom-fields', 'comments', 'revisions', 'sticky', 'post-formats'),
+			'taxonomies' => array('category') //gives cpt categories
 	 	) /* end of options */
     ); /* end of register post type */
-    }
-    add_action( 'init', 'custom_post_jojos_characters');
+    }/**end of function */
+	add_action( 'init', 'custom_post_jojos_characters');
+	
+
+	//gives cpt tags
+	function reg_tag() {
+		register_taxonomy_for_object_type('post_tag', 'jojos_characters');
+   }
+   add_action('init', 'reg_tag');
 
     ?>

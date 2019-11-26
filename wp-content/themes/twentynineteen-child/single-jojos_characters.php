@@ -22,12 +22,18 @@ get_header();
 			while ( have_posts() ) :
 
 				?>
-					<h3><?php the_title(); ?></h3>
-					<img src="<?php the_field('stand_user_image');?>" alt="<?php the_title(); ?>"/>
-					<p><?php the_field('stand_name');?></p>
-					<img src="<?php the_field('stand_image');?>" alt="<?php the_field('stand_name');?>"/>
+					<h2><?php the_title(); ?></h2>
+					<img src="<?php the_field('character_image');?>" alt="<?php the_title(); ?>"/>
+
+
+				<?php if( get_field('is_stand_user') ): ?>
+
+					<h2><?php the_field('stand_name');?></h2>
+					<img src="<?php the_field('stand_image');?>" alt="<?php the_field('stand_name');?>"
 
 				
+				<?php endif; ?>
+
 				<?php
 				the_post();
 

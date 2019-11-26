@@ -924,16 +924,10 @@ Template: twentynineteen
 }
 
 /***************************Header Styles***********************************/
-#navLinks {
+#navLinks ul li a {
   list-style-type: none;
-  font-size: 50px;
-  text-align: center;
-}
-#navLinks a {
-  color: black;
-}
-#navLinks a:hover {
-  color: orangered;
+  font-size: 60px;
+  text-align: right;
 }
 
 /*******************************************Body*****************************/
@@ -949,7 +943,15 @@ form input[type=submit] {
   background-color: black !important;
 }
 form input[type=submit]:hover {
-  background-color: orangered !important;
+  background-color: #c93702 !important;
+}
+
+label[for=comment] {
+  color: black;
+}
+
+#gf_text_limit {
+  color: black;
 }
 
 #hmuPage .entry-title {
@@ -960,14 +962,23 @@ form input[type=submit]:hover {
   text-align: center;
 }
 
-.site {
+h1, h2, h3, h4, h5, h6 {
+  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif !important;
+}
+
+.my_outline {
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+
+body {
   background-color: #fafafa;
 }
-.site a {
+body a {
   color: black !important;
 }
-.site a:hover {
-  color: orangered !important;
+body a:hover {
+  color: #c93702 !important;
 }
 
 .site-content {
@@ -991,7 +1002,11 @@ form input[type=submit]:hover {
 .slick-next:hover, .slick-next:focus,
 .slick-prev:hover,
 .slick-prev:focus {
-  color: orangered;
+  color: #c93702;
+}
+
+ul li {
+  list-style-type: none;
 }
 
 /****************************Footer Styles************************************/
@@ -1018,9 +1033,6 @@ form input[type=submit]:hover {
 }
 .site-footer .ftrSearch input[type=submit] {
   width: 30px;
-}
-.site-footer ul li {
-  list-style-type: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -16,10 +16,14 @@
 
 <body>
 <div id="page" class="site">
-	<nav id="navLinks" class="row align-center">
-			<a class="column large-4" href="http://localhost/testsite">Home</a>
-			<a class="column large-4" href="http://localhost/testsite/jojo-characters/">Jojos Characters</a>
-			<a class="column large-4" href="http://localhost/testsite/contact">HMU</a>
+
+	<nav  id="navLinks">
+		<ul class="row align-center ph6"> <!--putting the row here makes the menu horizontal -->
+			<li class="columns large-3"><a  href="http://localhost/testsite">Home</a></li>
+			<li class="columns large-4"><a  href="http://localhost/testsite/jojo-characters/">Jojos Characters</a></li>
+			<li class="columns large-3"><a  href="http://localhost/testsite/contact">HMU</a></li>
+		</ul>
+			
 	</nav>
 	
 

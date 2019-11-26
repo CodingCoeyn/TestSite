@@ -21,11 +21,14 @@
 	<footer id="colophon" class="site-footer row align-center">
 		
 		<div id='ftrSearch' class="column large-2">
-			<h5>Search</h5>
+			<h4>Search</h4>
 
-			<div class="align-center"> 
-			<?php get_search_form(); ?>
-			</div>
+			<label style>
+				<div class="align-center"> 
+					<?php get_search_form(); ?>
+					</div>
+			</label>
+			
 
 			
 			<!--<form>
@@ -36,18 +39,20 @@
 
 		</div>
 		<div class="column large-3 medium-2">
-			<h5>Roundabout</h5>
+			<h4>Roundabout</h4>
 
 			<!--<?php the_widget('WP_Widget_Media_Audio'); ?>-->
 
-			<audio class ="aligh-center" controls>
+			<audio class ="aligh-center" controls muted>
 				<source src="/testsite/wp-content/uploads/2019/10/00-Yes-Roundabout-2008-Remastered-Version.mp3" type="audio/mpeg">
 			</audio>
+			<br>
+			<a href="http://localhost/testsite/lyrics-to-roundabout/">Lyrics to Roundabout</a>
 
 
 		</div>
 		<div class="column large-3">
-			<h5>Recent Posts</h5>
+			<h4>Recent Posts</h4>
 			<ul>
 				<?php $args = array('post_type' => 'jojos_characters');
 
@@ -68,7 +73,7 @@
 			</ul>
 		</div>
 		<div class="column large-2">
-			<h5>Contact Us</h5>
+			<h4>Contact Us</h4>
 			<ul>
 				<li><a href="http://localhost/testsite/contact">HMU</a></li>
 				<li><a href="http://localhost/testsite/privacy-policy/">Privacy</a></li>

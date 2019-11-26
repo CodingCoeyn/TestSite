@@ -14,17 +14,12 @@ Template: twentynineteen
 /***************************Header Styles***********************************/
 
 //for the navigation bar
-#navLinks{
+#navLinks ul li a{
     list-style-type: none;
-    font-size: 50px;
-    text-align: center;
-    a{
-        color: black;
-
-        &:hover{
-            color: orangered;
-        }
-    }
+    font-size: 60px;
+    text-align: right;
+    
+    
 }
  
 
@@ -45,11 +40,17 @@ form{ // for ALL search buttons
     input[type="submit"]{
         background-color: black !important;
         &:hover{
-            background-color: orangered !important;
+            background-color: #c93702 !important;
         }
     }
 }
+label[for="comment"]{
+    color: black;
+}
 
+#gf_text_limit{
+    color:black;
+}
 
 #hmuPage{ //for contact page
     .entry-title{
@@ -61,19 +62,36 @@ form{ // for ALL search buttons
     text-align: center;
 }
 
+h1,h2,h3,h4,h5,h6{ // makes all headers the same font
+    font-family: "NonBreakingSpaceOverride", 
+                "Hoefler Text", 
+                "Baskerville Old Face", 
+                Garamond, 
+                "Times New Roman", 
+                serif !important; 
+
+}
+
+.my_outline{
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
+}
+
 
 //makes site an off-white
-.site{
+body{
     background-color: #fafafa;
     a{
         color: black !important;
         &:hover{
-            color: orangered !important;
+            color: #c93702 !important;
         }
     }
+    
 }
 .site-content{
     overflow: auto;
+
 }
 
 .slick-next::after {
@@ -89,9 +107,12 @@ form{ // for ALL search buttons
     font-size: 15px;
     color: black;
     &:hover, &:focus{
-        color: orangered;
+        color: #c93702;
     }
     
+}
+ul li{
+    list-style-type: none;
 }
 
 
@@ -127,9 +148,6 @@ form{ // for ALL search buttons
         }
     }
 
-    ul li{
-        list-style-type: none;
-    }
     font-size: 20px;
 }
 

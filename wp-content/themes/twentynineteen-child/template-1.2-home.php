@@ -24,10 +24,10 @@ get_header();
     <div id="homeContent" class="column large-8 align-center b">
 
         <div id="slideyboi" class="jojoSlider">
-            <div><img src="/testsite/wp-content/uploads/2019/10/AllJojos-1.jpg" alt="All Jojos"></div>
-            <div><img src="/testsite/wp-content/uploads/2019/11/jojos1234.jpeg" alt="Jojos 1, 2, 3 & 4"></div>
-            <div class="pa6"><img src="/testsite/wp-content/uploads/2019/11/joelene-kujo.jpg" alt="Jolyne Cujoh"></div>
-            <div><img src="/testsite/wp-content/uploads/2019/11/giorno-giovanna.jpg" alt = "Golden Wind & Giorno Giovanna"></div>
+            <div><img src="/testsite/wp-content/uploads/2019/10/AllJojos-1.jpg" alt=""></div>
+            <div><img src="/testsite/wp-content/uploads/2019/11/jojos1234.jpeg" alt=""></div>
+            <div class="pa6"><img src="/testsite/wp-content/uploads/2019/11/joelene-kujo.jpg" alt=""></div>
+            <div><img src="/testsite/wp-content/uploads/2019/11/giorno-giovanna.jpg" alt =""></div>
         </div>
 
         <div id="hometext">

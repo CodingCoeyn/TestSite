@@ -9,6 +9,11 @@ this is the template for the contact page
  get_header();
 
 ?>
+<style>
+    .gform_title{
+        font-size: 1.5em !important;
+    }
+</style>
 
 <body id="hmuPage" <?php body_class(); ?>>
 

@@ -33,9 +33,9 @@ get_header();
 						*/
 						?>
 						<div class="column large-9 small-12">
-							<h3><a href="<?php the_permalink();?>">
+							<h2><a href="<?php the_permalink();?>">
 								<?php the_title();?> </a>
-							</h3>
+							</h2>
 						</div>
 						<?php
 						// End the loop.
